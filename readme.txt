@@ -6,5 +6,6 @@ Commit github...
 create a new branch dev.
 Creating a new branch is quick and simple.
 again create dev branch;
-edit a little;
 on issue-001 edit this;
+edit a little,a little 
+完成issue-001后回来继续编辑dev分支上的此文件。
