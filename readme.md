@@ -38,4 +38,6 @@ edit a little,a little
 
 > 在新分支完成任务，切换到主分支 `git checkout [master]`，将 **[branch-name]** 合并到 **[master]** 分支 `git merge [branch-name]`；在合并中出现冲突时，手动解决所有冲突，再提交 `git commit -am "解决冲突"`，然后推送 `git push`
 
-> 如果新分支需要 push 到远程分支，则需要切换到 **[branch-name]**，执行 `git push --set-upstream origin [branch-name]`
+> 如果新分支需要 push 到远程分支，则需要切换到 **[branch-name]**，执行 `git push --set-upstream origin [branch-name]`；如果不需要 push，删除即可 `git branch -d [branch-name]`。
+
+> 删除远程分支 `git push -d origin [branch-name]`
