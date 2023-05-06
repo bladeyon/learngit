@@ -30,7 +30,7 @@ edit a little,a little
 
 > 查看远程分支：`git branch -r`
 
-> 切换远程分支：`git checkout [branch-name]` 或 `git switch [branch-name]`
+> 切换远程分支：`git checkout [branch-name]` 或 `git switch [branch-name]`，切换到前一个分支：`git checkout -`
 
 > 以当前分支为基础，创建新的分支 **[branch-name]**，创建后停留在当前分支：`git branch [branch-name]`
 
@@ -41,3 +41,7 @@ edit a little,a little
 > 如果新分支需要 push 到远程分支，则需要切换到 **[branch-name]**，执行 `git push --set-upstream origin [branch-name]`；如果不需要 push，删除即可 `git branch -d [branch-name]`。
 
 > 删除远程分支 `git push -d origin [branch-name]`
+
+### 练习回退
+
+> 回到每一次提交：`git reset [hash]` （回退后，重置暂存区，保留工作区的修改）、 `git reset --hard [hash]`（回退后，重置暂存区和工作区，即回到 [hash] commit 时的状态）；回到上一次提交：`git reset --hard`
