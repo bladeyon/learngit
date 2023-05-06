@@ -9,3 +9,4 @@
 5. master分支回退到 8071965
 6. 回退后修改bug
 7. master分支再次回到 8071965，修改bug
+8. git reset --hard [hash], 退回到 hash 位置，并重置暂存区和工作区
