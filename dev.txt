@@ -11,5 +11,3 @@
 7. master分支再次回到 8071965，修改bug
 8. git reset --hard [hash], 退回到 hash 位置，并重置暂存区和工作区
 9. 再增加一些提交记录
-10. 试试 git revert
-11. 执行 git revert 前多加点提交
