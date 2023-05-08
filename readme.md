@@ -44,4 +44,6 @@ edit a little,a little
 
 ### 练习回退
 
-> 回到每一次提交：`git reset [hash]` （回退后，重置暂存区，保留工作区的修改）、 `git reset --hard [hash]`（回退后，重置暂存区和工作区，即回到 [hash] commit 时的状态）；回到上一次提交：`git reset --hard`
+> 回到某一次提交：`git reset [hash]` （回退后，重置暂存区，保留工作区的修改）、 `git reset --hard [hash]`（回退后，重置暂存区和工作区，即回到 [hash] commit 时的状态）；回到上一次提交：`git reset --hard`，撤销 reset 操作： `git reset --hard [hash]` （hash 为退回之前的 commit 的 hash）。reset 的操作是通过移动 `HEAD（引用指针）` 实现
+
+> 回滚到某次提交：`git revert [hash]` （回滚后是，[hash] 提交前的状态，[hash]及以后的修改以冲突的方式存在工作区），并**生成新的 commit**，这样的好处是每一次提交的历史记录都是完整的；可以执行 `git revert --abort` 撤销本次回滚
